@@ -77,7 +77,7 @@ public class AppConfig {
 
 
         http.authorizeHttpRequests(req->req.requestMatchers(HttpMethod.OPTIONS,"**").permitAll()
-                .requestMatchers("/auth/login","/user","http://localhost:8080/swagger-ui/index.html#/").permitAll()
+                .requestMatchers("/auth/login","/user","/product").permitAll()
 //                .requestMatchers("/admin/**").authenticated()
 //                .requestMatchers( "/user/**").authenticated()
                 .anyRequest().authenticated());
